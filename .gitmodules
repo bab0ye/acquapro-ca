@@ -1,0 +1,3 @@
+[submodule "acquapro-ca"]
+    path = acquapro-ca
+    url = https://github.com/bab0ye/acquapro-ca
