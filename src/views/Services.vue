@@ -3,7 +3,7 @@
     <ParallaxSection
       title="Nos Services"
       description="Une gamme complète de services d'études et d'accompagnement technique pour répondre à vos besoins spécifiques"
-      backgroundImage="/images/water-treatment-process.jpg"
+      backgroundImage="/images/water-treatment-process.webp"
       maxWidthStyle="max-w-7xl"
     />
     

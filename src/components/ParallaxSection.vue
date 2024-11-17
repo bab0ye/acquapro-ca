@@ -1,10 +1,11 @@
 <template>
-  <div 
-    class="relative h-[800px] bg-fixed bg-cover bg-center flex items-center justify-center"
-    
-    :style="{
+  <div
+      class="relative h-[800px] bg-fixed bg-cover bg-center flex items-center justify-center"
+      :style="{
       backgroundImage: `url(${backgroundImage})`,
-      maxWidth: maxWidthStyle
+      maxWidth,
+      minHeight: '800px',
+      width: '100%'
     }"
   >
     <div class="absolute inset-0 bg-black/50"></div>
@@ -16,15 +17,12 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  title: string
-  description: string
-  backgroundImage: string
-  maxWidthStyle: string
-
-  
-}
->
-()
-
+withDefaults(defineProps<{
+  title: string;
+  description: string;
+  backgroundImage: string;
+  maxWidth?: string;
+}>(), {
+  maxWidth: '100%'
+});
 </script>
