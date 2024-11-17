@@ -6,6 +6,10 @@
 
 <script lang="ts">
 export default {
-  name: 'ChemicalIcon'
-}
+  name: 'ChemicalIcon',
+};
 </script>
+
+<style scoped>
+/* You can add styles here if needed */
+</style>
